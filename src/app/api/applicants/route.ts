@@ -1,5 +1,3 @@
-// TODO: 배포 후 테스트 DB로 테스트하고, 바꿔야함.
-
 import smsClient from '@/utils/smsClient';
 import supabase from '@/utils/supabase';
 import { NextResponse } from 'next/server';
@@ -33,8 +31,8 @@ export async function POST(req: Request) {
     };
 
     const { error } = await supabase
-      // .from('inqueries')
-      .from('test')
+      .from('inqueries')
+      // .from('test')
       .insert([{ ...consultationData }]);
 
     if (error) {
@@ -42,8 +40,8 @@ export async function POST(req: Request) {
     }
 
     const result = await smsClient.send({
-      // to: ['01027474363', '01022064363'],
-      to: ['01095192619'],
+      to: ['01027474363', '01022064363'],
+      // to: ['01095192619'],
       content: `PG&VAN상담알림 | ${applicantName} | ${contactNumber}`
     });
 
