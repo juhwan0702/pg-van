@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex justify-center items-center outline-none transition;
+  }
+
+  .btn-lg {
+    @apply font-notoSans text-[18px] not-italic font-medium leading-[1.4] gap-x-2.5 py-[15.5px] rounded-[28px];
+  }
+
+  .btn-md {
+    @apply font-notoSans text-[16px] not-italic font-medium leading-[1.4] gap-x-[6px] py-[13px] rounded-[24px];
+  }
+
+  .btn-sm {
+    @apply py-2.5 rounded-[100px];
+  }
+
+  .btn-solid {
+    @apply bg-primary text-white hover:bg-white hover:text-primary hover:ring-2 hover:ring-primary;
+  }
+
+  .btn-outlined {
+    @apply bg-white ring-2 ring-slateGray text-charcoal hover:bg-charcoal hover:text-white hover:ring-charcoal;
+  }
+
+  .btn-mixed {
+    @apply bg-[#FAFAFA] text-charcoal hover:bg-primary hover:text-white;
+  }
+}
+
+@layer utilities {
+  .responsive-container {
+    width: clamp(335px, calc((100vw - 375px) * 0.8122 + 335px), 1200px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  :root {
+    --dynamic-gap: calc(30px + ((100vw - 768px) * 0.28428));
+  }
+}
+@media (min-width: 1366px) {
+  :root {
+    --dynamic-gap: 200px;
+  }
+}
