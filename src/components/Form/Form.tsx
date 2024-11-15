@@ -16,7 +16,7 @@ function Form() {
       position: '',
       businessNumber: '',
       content: '',
-      privacyAgreement: false,
+      privacyAgreement: false
     });
 
   const handleSubmit = async (e: FormEvent) => {
@@ -30,9 +30,9 @@ function Form() {
       const response = await fetch('/api/applicants', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData)
       });
 
       const data = await response.json();
@@ -40,6 +40,7 @@ function Form() {
       alert(data.message);
     } catch (error) {
       alert('상담 신청 중 오류가 발생했습니다. 다시 시도해 주세요.');
+      console.log(error);
     }
   };
 

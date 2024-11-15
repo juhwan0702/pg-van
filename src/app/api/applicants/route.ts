@@ -12,7 +12,7 @@ export async function POST(req: Request) {
       contactNumber,
       companyName,
       businessNumber,
-      content,
+      content
     } = await req.json();
 
     // 유효성 검사 로직 추가 가능
@@ -29,7 +29,7 @@ export async function POST(req: Request) {
       companyName,
       contactNumber,
       businessNumber,
-      content,
+      content
     };
 
     const { error } = await supabase
@@ -44,7 +44,7 @@ export async function POST(req: Request) {
     const result = await smsClient.send({
       // to: ['01027474363', '01022064363'],
       to: ['01095192619'],
-      content: `PG&VAN상담알림 | ${applicantName} | ${contactNumber}`,
+      content: `PG&VAN상담알림 | ${applicantName} | ${contactNumber}`
     });
 
     if (result.statusName === 'success') {
@@ -54,8 +54,10 @@ export async function POST(req: Request) {
       );
     }
   } catch (error) {
+    console.log(error);
+
     return NextResponse.json(
-      { message: `상담 신청 중 오류가 발생했습니다. ${error}` },
+      { message: `상담 신청 중 오류가 발생했습니다.` },
       { status: 500 }
     );
   }
