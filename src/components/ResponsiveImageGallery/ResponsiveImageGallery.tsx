@@ -12,16 +12,16 @@ function ResponsiveImageGallery() {
           width:
             'clamp(775px, calc((100vw - 375px) * ((1200 - 775) / (1440 - 375)) + 775px), 1200px)',
           height:
-            'clamp(256.65px, calc((100vw - 375px) * ((398 - 256.65) / (1440 - 375)) + 256.65px), 398px)',
+            'clamp(256.65px, calc((100vw - 375px) * ((398 - 256.65) / (1440 - 375)) + 256.65px), 398px)'
         }}
       >
-        {introProducts.map((image, index) => (
+        {introProducts.map((image) => (
           <div
-            key={index}
+            key={image.id}
             className="relative h-full flex-shrink-0 rounded-[20px]"
             style={{
               width:
-                'clamp(245px, calc((100vw - 375px) * ((380 - 245) / (1440 - 375)) + 245px), 380px)',
+                'clamp(245px, calc((100vw - 375px) * ((380 - 245) / (1440 - 375)) + 245px), 380px)'
             }}
           >
             <Image
