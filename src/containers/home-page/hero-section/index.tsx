@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section className="w-full overflow-x-hidden mb-16 md:mb-24">
       <Header
         heading="당신의 결제솔루션"
-        description="이지크레더블과 함께하세요!"
+        description="KSNET & KIS정보통신과 함께하세요!"
         coloredText="결제솔루션"
         coloredClass="text-primary"
       >
@@ -36,14 +36,14 @@ const HeroSection = () => {
             width:
               'clamp(604px, calc((100vw - 375px) * ((1200 - 604) / (1440 - 375)) + 604px), 1200px)',
             height:
-              'clamp(266px, calc((100vw - 375px) * ((528 - 266) / (1440 - 375)) + 266px), 528px)',
+              'clamp(266px, calc((100vw - 375px) * ((528 - 266) / (1440 - 375)) + 266px), 528px)'
           }}
         >
           <div
             className="relative h-full flex-shrink-0 rounded-[20px]"
             style={{
               width:
-                'clamp(190px, calc((100vw - 375px) * ((378 - 190) / (1440 - 375)) + 190px), 378px)',
+                'clamp(190px, calc((100vw - 375px) * ((378 - 190) / (1440 - 375)) + 190px), 378px)'
             }}
           >
             <Image
@@ -59,7 +59,7 @@ const HeroSection = () => {
             className="relative h-full flex-shrink-0 rounded-[20px]"
             style={{
               width:
-                'clamp(404px, calc((100vw - 375px) * ((802 - 404) / (1440 - 375)) + 404px), 802px)',
+                'clamp(404px, calc((100vw - 375px) * ((802 - 404) / (1440 - 375)) + 404px), 802px)'
             }}
           >
             <Image

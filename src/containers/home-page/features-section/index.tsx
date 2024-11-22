@@ -7,7 +7,7 @@ function FeaturesSection() {
     <section className="w-full mb-16 md:mb-24">
       <Header
         heading="특징 소개"
-        description="이지크레더블 솔루션의 특징을 소개합니다."
+        description="KSNET & KIS정보통신 솔루션의 특징을 소개합니다."
         headingLevel={2}
       />
       <div
