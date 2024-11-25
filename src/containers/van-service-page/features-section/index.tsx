@@ -5,7 +5,10 @@ import { vanFeatures } from '@/constants/vanFeatures';
 function FeaturesSection() {
   return (
     <section className="flex flex-col responsive-container mb-16 md:mb-[72px]">
-      <Header heading="VAN 특징들" description="이지크레더블 VAN 서비스 특징" />
+      <Header
+        heading="VAN 특징들"
+        description="KSNET & KIS정보통신 VAN 서비스 특징"
+      />
       <ol>
         {vanFeatures.map((vanFeature) => (
           <ListItem
