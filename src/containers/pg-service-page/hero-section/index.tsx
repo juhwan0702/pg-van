@@ -4,12 +4,15 @@ import ImageDescriptionPair from '@/components/ImageDescription';
 function HeroSection() {
   return (
     <section className="flex flex-col responsive-container">
-      <Header heading="PG 서비스" description="온라인 지불결제 서비스" />
+      <Header
+        heading="PG 서비스"
+        description="온라인·오프라인 지불결제 서비스"
+      />
       <div className="flex flex-col gap-[46px] md:gap-[96px] mb-[72px]">
         <ImageDescriptionPair
           imageSrc="/images/pg-1.jpg"
           heading="스마트한 온라인 결제 솔루션"
-          description="이지크레더블의 PG 솔루션을 통해 고객의 결제 경험을 한층 업그레이드하세요. 신속하고 안전하게 결제를 지원합니다. 최신 보안 기술을 적용하여 고객의 정보를 안전하게 보호합니다. 안심하고 사용할 수 있는 결제 시스템을 구축하세요."
+          description="KSNET & KIS정보통신의 PG 솔루션을 통해 고객의 결제 경험을 한층 업그레이드하세요. 신속하고 안전하게 결제를 지원합니다. 최신 보안 기술을 적용하여 고객의 정보를 안전하게 보호합니다. 안심하고 사용할 수 있는 결제 시스템을 구축하세요."
         />
         <ImageDescriptionPair
           imageSrc="/images/pg-2.jpg"
